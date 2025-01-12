@@ -34,7 +34,8 @@
               <dt class="text-sm text-gray-500">Overview</dt>
               <dd class="text-lg mt-1">{{ $movie->overview }}</dd>
             </dl>
-            <div>
+            {{-- FIX: Only works with hard-coded vector array in query --}}
+            {{-- <div>
               <p class="text-sm text-gray-500">Similar movies</p>
               <div class="grid grid-cols-4 gap-10 mt-2">
                 @foreach($similar_movies as $similar_movie)
@@ -45,13 +46,9 @@
                       <p class="text-sm mt-1">{{ $similar_movie->release_year }}</p>
                     </div>
                   </a>
-                  {{-- <div>
-                    <h3>{{ $similar_movie->title }}</h3>
-                    <img src="https://image.tmdb.org/t/p/original/{{ $similar_movie->poster_path }}" alt="{{ $similar_movie->title }} poster">
-                  </div> --}}
                 @endforeach
               </div>
-            </div>
+            </div> --}}
           </div>
         </div>
       </div>
