@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlite'),
+    'default' => env('DB_CONNECTION', 'libsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -33,8 +33,9 @@ return [
 
         'libsql' => [
             'driver' => env('DB_CONNECTION', 'libsql'),
-            'url' => env('TURSO_DATABASE_URL'),
-            'password' => env('TURSO_AUTH_TOKEN')
+            'database' => database_path('dev.db'),
+            // 'url' => env('TURSO_DATABASE_URL'),
+            // 'password' => env('TURSO_AUTH_TOKEN'),
         ],
 
         'sqlite' => [
