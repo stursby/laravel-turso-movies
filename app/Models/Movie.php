@@ -13,8 +13,9 @@ class Movie extends Model
         'title',
         // 'genre',
         'release_year',
+        'poster_path',
         'overview',
-        'plot_embedding'
+        'plot_embedding',
     ];
 
     protected $casts = [

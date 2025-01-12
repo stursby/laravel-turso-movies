@@ -26,6 +26,7 @@ class MovieSeeder extends Seeder
                 // TODO
                 // 'genre' => $movie['genre_ids']
                 'release_year' => Carbon::parse($movie['release_date'])->format('Y'),
+                'poster_path' => $movie['poster_path'],
                 'overview' => $movie['overview']
             ]);
         }

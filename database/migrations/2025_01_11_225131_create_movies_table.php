@@ -18,6 +18,7 @@ return new class extends Migration
             // TODO: TMDB returns array of genre ID's
             // $table->string('genre');
             $table->integer('release_year');
+            $table->string('poster_path');
             $table->text('overview');
             $table->vector('plot_embedding', 768)->nullable();
             $table->timestamps();
